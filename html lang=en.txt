@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="decodificador.css">
+    <script src="script.js"></script>
+    <title>Decodificador</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="containerEncriptado">
+            <div class="containerEspacioLogo">
+            <div class="containerLogo">
+                <img class="logo" src="img/Vector.png" alt="Logo Alura">
+            </div>
+        </div>
+            <div class="conteainerTexto">
+                <input class="texto1" id="inputTexto" type="text" placeholder="Ingrese el texto aqui">
+            </div>
+
+            <div class="containerButton">
+                <div class="letrero">
+                    <div class="signo">
+                        <img src="img/signo.png" alt="signo">
+                    </div>
+                    <p class="minusculas">Solo se aceptan minusculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <div class="buttonEncriptar">
+                        <button class="encriptar" onclick="encriptar()"> Encriptar</button>
+                    </div>
+                    <div class="buttonDesencriptar">
+                        <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerResult">
+            <div class="containerRectangulo">
+                <div class="containerimagen" >
+                    <img class="imagen" id="img" src="img/Muñeco.png" alt="imagen">
+                </div>
+                <div class="containerRespuesta" >
+                    <div class="containerMensaje">
+                        <p class="respuestaMensaje" id="resNinguna">Nungun mensaje fue encontrado</p>
+                    </div>
+                    <div class="containerTexto" >
+                        <textarea id="textAreaRes" class="texto" name="texto" cols="30" rows="4" placeholder="Ingresa texto que desees encriptar o desencriptar"></textarea>
+                    </div>
+                    <div class="ocultarButton" >
+                        <button id="copiar" class="buttonCopy" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+</html>
